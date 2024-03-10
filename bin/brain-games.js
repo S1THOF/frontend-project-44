@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import acquaintance from '../src/cli.js'
+import acquaintance from '../src/cli.js';
 
 acquaintance();
