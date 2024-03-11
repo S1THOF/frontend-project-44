@@ -16,9 +16,8 @@ const brainEven = () => {
     if (answer === isEven) {
       console.log('Correct!');
       winCount += 1;
-      console.log(winCount);
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven}'. Let's try again, Bill!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven}'. Let's try again, ${name}!`);
       winRound = false;
     }
   }
