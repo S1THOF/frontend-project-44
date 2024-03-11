@@ -9,7 +9,7 @@ const brainEven = () => {
   console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   while (winRound === true && winCount !== 3) {
-    const task = getRandomNumber();
+    const task = getRandomNumber(1, 100);
     console.log(`Question: ${task}`);
     const answer = readlineSync.question('Your answer: ');
     const isEven = task % 2 === 0 ? 'yes' : 'no';
