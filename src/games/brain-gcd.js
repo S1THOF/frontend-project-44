@@ -6,7 +6,7 @@ const description = 'Find the greatest common divisor of given numbers.';
 const settings = () => {
   let a = getRandomNumber(1, 20);
   let b = getRandomNumber(1, 20);
-  const task = `${a}, ${b}`;
+  const task = `${a} ${b}`;
   let answer = 0;
   while (a !== b) {
     if (a > b) {
