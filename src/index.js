@@ -15,7 +15,7 @@ const start = (description, settings) => {
       console.log('Correct!');
       winCount += 1;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${answer}'. Let's try again, ${name}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'. Let's try again, ${name}!`);
       break;
     }
   }
