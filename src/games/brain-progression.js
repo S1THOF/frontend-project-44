@@ -7,7 +7,7 @@ const settings = () => {
   let task = [];
   const startNumber = getRandomNumber(1, 10);
   const step = getRandomNumber(1, 10);
-  const lostNumber = getRandomNumber(1, 2);
+  const lostNumber = getRandomNumber(1, 10);
 
   task.push(startNumber);
   for (let i = 0; i < 9; i += 1) {
