@@ -2,6 +2,12 @@ import getRandomNumber from '../getRandomNumber.js';
 import startGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
+const createProgression = (task, step) => {
+  for (let i = 0; i < 9; i += 1) {
+    task.push(task[i] + step);
+  }
+  return task;
+};
 
 const settings = () => {
   let task = [];
@@ -10,9 +16,7 @@ const settings = () => {
   const lostNumber = getRandomNumber(1, 10);
 
   task.push(startNumber);
-  for (let i = 0; i < 9; i += 1) {
-    task.push(task[i] + step);
-  }
+  createProgression(task, step);
   const answer = task[lostNumber].toString();
   task[lostNumber] = '..';
   task = task.join(' ');

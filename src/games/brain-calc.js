@@ -17,8 +17,10 @@ const settings = () => {
     firstNumber - secondNumber,
     firstNumber * secondNumber,
   ];
-  const task = `Question: ${sumString[operand]}`;
-  const answer = sumNumber[operand].toString();
+  const stringTask = sumString[operand];
+  const numberTask = sumNumber[operand];
+  const task = `Question: ${stringTask}`;
+  const answer = numberTask.toString();
   return { task, answer };
 };
 
