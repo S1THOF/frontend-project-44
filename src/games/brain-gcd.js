@@ -16,8 +16,9 @@ const settings = () => {
         secondNumber -= firstNumber;
       }
     }
+    return firstNumber;
   };
-  answer = gcd.toString();
+  answer = gcd(firstNumber, secondNumber).toString();
   return { task, answer };
 };
 
